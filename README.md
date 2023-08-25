@@ -10,7 +10,7 @@ The functions plot worm lifespans based on the experimental control and outputs 
 
 There is one function used to graph the three types of experiments: WLS_autoplot(), where you pass in the "lifespan_type" keyword argument as "Treatment", "RNAi", or "Genotype" experiment. The negative controls, used for stats and plotting, can be passed into the function as keyword arguments for each type of experiment, too. Make sure to check defaults and keyword argument descriptions.
 
-The alternative is to pass in WLS_manualplot(), which is a function that returns a lifespan plot with correctly formatted data for Kaplan-Meier survival curves. With WLS_manualplot, you will have the ability to plot multiple variables at a time.
+The alternative is to pass in WLS_manualplot(), which is a function that returns a lifespan plot with correctly formatted data for Kaplan-Meier survival curves. With WLS_manualplot, you have the ability to plot multiple variables at a time.
 
 # Setting up WLSplot
 
@@ -55,7 +55,7 @@ B. Installation of R, RStudio, and the WLSplot dependencies (see Setting up WLSp
 
 ![plot](./pictures/Directory.jpg?raw=true)
 
-2. Create a new directory within this one and save the .ods lifespan files of interest there. For the example, I name this new directory Lifespan_1 and then download the .ods files provided in Examples/WLS_autoplot/Lifespan_1/ and save them there, as imaged below. You can initially download these files by A) using the wget command (https://gist.github.com/jwebcat/5122366) or B) by navigating to the file you'd like to download and click the download button on the top right of the page. 
+2. Create a new directory within this one and save the .ods lifespan files of interest there. For the example, I name this new directory Lifespan_1 and then download the .ods files provided in Examples/WLS_autoplot/Lifespan_1/ and save them there, as imaged below. You can initially download these files by A) using the wget command in the terminal (e.g. wget https://github.com/labmccormick/WLSplot/Examples/WLS_autoplot/Lifespan_1/*ods) or B) by navigating to the file you'd like to download and click the download button on the top right of the page. 
 
 ![plot](./pictures/Directory_odsfiles.jpg?raw=true)
 ![plot](./pictures/odsfiles.jpg?raw=true)
