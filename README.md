@@ -41,7 +41,7 @@ devtools::install_github("labmccormick/WLSplot", build_vignettes = TRUE)
 ```
 
 
-# Running WLSplot: An example provided.
+# Running WLSplot: An example
 
 ### Prerequisites: 
 
