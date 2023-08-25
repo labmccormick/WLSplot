@@ -60,7 +60,7 @@ B. Installation of R, RStudio, and the WLSplot dependencies (see Setting up WLSp
 ![plot](./pictures/Directory_odsfiles.jpg?raw=true)
 ![plot](./pictures/odsfiles.jpg?raw=true)
 
-2. Go back to the first directory you made and create an R file where we will run WLS_autoplot(). For the example, I enter the Example_WLSplot directory and download the R file Examples/WLS_autoplot/Example_WLS_autoplot.R and place it in this directory. 
+2. Go back to the first directory you made and create an R file where we will run WLS_autoplot(). For the example, I enter the Example_WLSplot directory and download the R file Examples/WLS_autoplot/Example_WLS_autoplot.R and place it in this directory. (you can use the following command in the terminal to download the R file: wget https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Example_WLS_autoplot.R")
 
 ![plot](./pictures/Directory_Rfile.jpg?raw=true)
 
