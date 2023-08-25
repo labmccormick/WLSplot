@@ -55,7 +55,7 @@ B. Installation of R, RStudio, and the WLSplot dependencies (see Setting up WLSp
 
 ![plot](./pictures/Directory.jpg?raw=true)
 
-2. Create a new directory within this one and save the .ods lifespan files of interest there. For the example, I name this new directory Lifespan_1 and then download the .ods files provided in Examples/WLS_autoplot/Lifespan_1/ and save them there, as imaged below. You can initially download these files by A) using the wget command in the terminal in the created Lifespan_1 directory (e.g. "wget https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/*ods") or B) by navigating to the file you'd like to download and click the download button on the top right of the page.
+2. Create a new directory within this one and save the .ods lifespan files of interest there. For the example, I name this new directory Lifespan_1 and then download the .ods files provided in Examples/WLS_autoplot/Lifespan_1/ and save them there, as imaged below. You can initially download these files by A) using the wget command in the terminal in the created Lifespan_1 directory (e.g. "wget https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/N2.ods") or B) by navigating to the file you'd like to download and click the download button on the top right of the page.
 
 ![plot](./pictures/Directory_odsfiles.jpg?raw=true)
 ![plot](./pictures/odsfiles.jpg?raw=true)
