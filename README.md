@@ -1,21 +1,30 @@
-# Setting up WLSplot
-Tool that currently supports one variable worm lifespan experiments for RNAi, Treatment/Drug, or Genotype.
+# WLSplot
+
+### Description 
+
+WLSplot is used as a tool that currently supports plotting one variable worm lifespan experiments for RNAi, Treatment/Drug, or Genotype.
 
 The functions plot worm lifespans based on the experimental control and outputs as an svg. There is also the option to output the worm data calculated for the Kap Meier survival curve. 
 
-#### Install R and RStudio
+#### More specific description of WLSplot functions:
 
-Follow the tutorial here: https://rstudio-education.github.io/hopr/starting.html
+There is one function used to graph the three types of experiments: WLS_autoplot(), where you pass in the "lifespan_type" keyword argument as "Treatment", "RNAi", or "Genotype" experiment. The negative controls, used for stats and plotting, can be passed into the function as keyword arguments for each type of experiment, too. Make sure to check defaults and keyword argument descriptions.
 
-#### Install the WLSplot dependencies
+The alternative is to pass in WLS_manualplot(), which is a function that returns a lifespan plot with correctly formatted data for Kaplan-Meier survival curves. With WLS_manualplot, you will have the ability to plot multiple variables at a time.
 
-In general R will warn you if package dependecies outside of R are missing and it easiest to see these when installing the R libraries below one at a time if you run into any unforeseen snags
+# Setting up WLSplot
+
+1. Install R and RStudio. Follow the tutorial here: https://rstudio-education.github.io/hopr/starting.html
+
+2. Install the WLSplot dependencies. You can do this by opening RStudio/R and running the following:
 
 ```
 rm(list = ls())
 
 install.packages(c("ragg","pkgdown","scales", "systemfonts", "textshaping", "devtools", "readODS", "ggplot2", "svglite", "RColorBrewer", "ggExtra", "survival", "ggtext", "ggfortify", "plyr", "markdown"))
 ```
+
+In general R will warn you if package dependencies outside of R are missing and it easiest to see these when installing the R libraries below one at a time if you run into any unforeseen snags. 
 
 You may need to install freetype 2 and related libraries on your machine outside of R before installing the R systemfonts and pkgdown packages. E.g. if you are running Ubuntu or a deb-based linux distribution, run the following in the terminal:
 
@@ -25,17 +34,11 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install libfontconfig1-dev libharfbuzz-dev libfribidi-dev libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev
 ```
 
-#### installing WLSplot from github
+3. Install WLSplot from github by running the following in RStudio/R:
 
 ```
 devtools::install_github("labmccormick/WLSplot", build_vignettes = TRUE)
 ```
-
-## WLSplot functions
-
-There is one function used to graph the three types of experiments: WLS_autoplot(), where you pass in the "lifespan_type" keyword argument as "Treatment", "RNAi", or "Genotype" experiment. The negative controls, used for stats and plotting, can be passed into the function as keyword arguments for each type of experiment, too. Make sure to check defaults and keyword argument descriptions.
-
-The alternative is to pass in WLS_manualplot(), which is a function that returns a lifespan plot with correctly formatted data for Kaplan-Meier survival curves. With WLS_manualplot, you will have the ability to plot multiple variables at a time.
 
 
 # Running WLSplot: An example provided.
