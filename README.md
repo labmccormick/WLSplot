@@ -28,7 +28,7 @@ sudo apt install libfontconfig1-dev libharfbuzz-dev libfribidi-dev libfreetype6-
 #### installing WLSplot from github
 
 ```
-devtools::install_github("blaisemariner17/WLSplot", build_vignettes = TRUE)
+devtools::install_github("labmccormick/WLSplot", build_vignettes = TRUE)
 ```
 
 ## WLSplot functions

@@ -1,0 +1,35 @@
+---
+title: "WLSplot"
+author: "Blaise L. Mariner, Jack Peterson, Jackson C. Taylor, Alex T. Achusim, Mark A. McCormick"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{WLSplot}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+## Running WLSplot on sample data
+
+Sample data and examples of plotting can be viewed here: https://github.com/labmccormick/WLSplot/Examples .
+
+This Examples directory shows that WLSplot has the ability to batch process worm lifespan data for RNAi, Drug, and Genotype studies using Kaplan-Meier survival curves and Wilcoxon rank sum statistics.
+
+## Setup for your own data
+
+1. Create a directory for where WLS_autoplot() should plot your data. This will be the "working directory."
+
+2. In that working directory, create a subdirectory containing your data. This data should be in ods files of the format seen in the example worm lifespan datasheet provided here:  github.com/labmccormick/WLSplot/Examples/BLANK_WLS_file.ods 
+
+3. In the working directory, create an R file where you will call the WLSplot function of interest. The keyword arguments passed into the WLS_autoplot() are crucial for the function functionality. The keyword arguments should tell the function what type of experiment it is, what the names of the controls are, and possibly other features of theyour experimental conditions. Right now, WLSplot only has the ability to graph data varying by one variable. So take that into consideration when running the function. Examples of WLS_autoplot() and WLS_manualplot can be seen here: github.com/labmccormick/WLSplot/Examples/ .
+
+```{r setup}
+library(WLSplot)
+library(scales)
+```
