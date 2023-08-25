@@ -1,5 +1,7 @@
 # WLSplot
 
+![plot](./pictures/Figure1.jpg?raw=true)
+
 ### Description 
 
 WLSplot is used as a tool that currently supports plotting one variable worm lifespan experiments for RNAi, Treatment/Drug, or Genotype.
