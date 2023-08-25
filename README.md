@@ -1,6 +1,6 @@
 # WLSplot
 
-![plot](./pictures/Figure1.jpg?raw=true)
+![plot](./pictures/figure1.jpg?raw=true)
 
 ### Description 
 
