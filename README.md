@@ -1,6 +1,6 @@
 # WLSplot
 
-An R package that turns raw worm lifespan data into an informative survival curve. 
+An R package that turns raw worm lifespan data into informative survival curves. 
 
 ![plot](./pictures/figure1.jpg?raw=true)
 
@@ -18,7 +18,7 @@ rm(list = ls())
 install.packages(c("ragg","pkgdown","scales", "systemfonts", "textshaping", "devtools", "readODS", "ggplot2", "svglite", "RColorBrewer", "ggExtra", "survival", "ggtext", "ggfortify", "plyr", "markdown"))
 ```
 
-In general R will warn you if package dependencies outside of R are missing and it easiest to see these when installing the R libraries below one at a time if you run into any unforeseen snags. 
+In general, R will warn you if package dependencies outside of R are missing and it easiest to see these when installing the R libraries below one at a time if you run into any unforeseen snags. 
 
 You may need to install freetype 2 and related libraries on your machine outside of R before installing the R systemfonts and pkgdown packages. E.g. if you are running Ubuntu or a deb-based linux distribution, you may have to run the following in the terminal:
 
@@ -28,7 +28,7 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install libfontconfig1-dev libharfbuzz-dev libfribidi-dev libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev
 ```
 
-3. Install WLSplot from github by running the following in RStudio/R:
+3. Install WLSplot from GitHub by running the following in RStudio/R:
 
 ```
 devtools::install_github("labmccormick/WLSplot", build_vignettes = TRUE)
@@ -39,7 +39,7 @@ devtools::install_github("labmccormick/WLSplot", build_vignettes = TRUE)
 
 ### Prerequisites: 
 
-A. (OPTIONAL) If you plan on downloading the example data provided in this package, I show how to do so by using "wget." Users are able to use wget if they are on a Mac or Linux operating systems. The wget commands provided here will download the files to the current working directory, i.e. the directory in which the terminal is open (Hint: To see what current folder or directory you’re in, type "pwd" into the terminal). 
+A. (OPTIONAL) If you plan on downloading the example data provided in this package, I show how to do so by using "wget." Users are able to use wget if they are on a Mac or Linux operating system. The wget commands provided here will download the files to the current working directory, i.e. the directory in which the terminal is open (Hint: To see what current folder or directory you’re in, type "pwd" into the terminal). 
 
 If you do not have wget installed, run the following in the terminal:
 
@@ -69,7 +69,7 @@ D. Your computer will need R, RStudio, and the WLSplot dependencies. Follow the 
 
 ![plot](./pictures/Directory.jpg?raw=true)
 
-2. Create a new daughter directory within your new directory. This daughter directory will contain the ods files of raw worm lifespan data. For the example, I name this daughter directory "Lifespan_1" and within, I save the ods files provided in ./Examples/WLS_autoplot/Lifespan_1/, as imaged below. These files can be individually downloaded by opening them up on github and clicking the download button on the top right of the window, or you can run the following in the terminal:
+2. Create a new daughter directory within your new directory. This daughter directory will contain the ods files of raw worm lifespan data. For the example, I name this daughter directory "Lifespan_1" and within, I save the ods files provided in ./Examples/WLS_autoplot/Lifespan_1/, as imaged below. These files can be individually downloaded by opening them up on GitHub and clicking the download button on the top right of the window, or you can run the following in the terminal:
 ```
 wget https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/N2.ods
 wget https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/daf-2.ods
@@ -81,7 +81,7 @@ To move onto step 3, you should have these ods files in the new daughter directo
 ![plot](./pictures/Directory_odsfiles.jpg?raw=true)
 ![plot](./pictures/odsfiles.jpg?raw=true)
 
-3. Navigate out of the daughter directory, and create an R file to run the WLS_autoplot() function. For the example, I download the R file Examples/WLS_autoplot/Example_WLS_autoplot.R and place it in this directory. This can be done by opening this file and clicking the download button the the top right of the screen, or by running the following command in the terminal:
+3. Navigate out of the daughter directory, and create an R file to run the WLS_autoplot() function. For the example, I downloaded the R file Examples/WLS_autoplot/Example_WLS_autoplot.R and placed it in this directory. This can be done by opening this file and clicking the download button the the top right of the screen, or by running the following command in the terminal:
 ```
 wget https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Example_WLS_autoplot.R
 ```
