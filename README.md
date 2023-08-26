@@ -53,10 +53,10 @@ C. Your computer will need R, RStudio, and the WLSplot dependencies. Follow the 
 
 2. Create a new daughter directory within your new directory. This daughter directory will contain the ods files of raw worm lifespan data. For the example, I name this daughter directory "Lifespan_1" and within, I save the ods files provided in ./Examples/WLS_autoplot/Lifespan_1/, as imaged below. These files can be individually downloaded by opening them up on github and clicking the download button on the top right of the window, or you can run the following in the terminal:
 ```
-wget https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/N2.ods https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/N2.ods
-wget https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/N2.ods https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/daf-2.ods
-wget https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/N2.ods https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/yfg-1.ods
-wget https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/N2.ods https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/yfg-2.ods
+wget https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/N2.ods
+wget https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/daf-2.ods
+wget https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/yfg-1.ods
+wget https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/yfg-2.ods
 ```
 To move onto step 3, you should have these ods files in the new daughter directory created in this step as seen below. 
 
