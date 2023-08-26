@@ -39,7 +39,9 @@ devtools::install_github("labmccormick/WLSplot", build_vignettes = TRUE)
 
 ### Prerequisites: 
 
-A. Lifespan spreadsheet(s) equal to or very similar to the blank WLS lifespan .ods file given in the Examples directory. If you are unfamiliar with .ods files, this is the filetype used for "excel" sheets in LibreOffice, which is free and open-source. To install libreoffice, visit here: https://www.libreoffice.org/get-help/install-howto/. 
+A. Your computer will need to have LibreOffice installed. To install, please follow the instructions here: https://www.libreoffice.org/get-help/install-howto/.
+
+B. To plot a worm lifespan, you will need worm lifespan data. The following example will walk you through step-by-step how to plot provided worm lifespan data. If you have your own data, please make sure it is in the format matching the WLS blank spreadsheet provided in the labmccormick/WLSplot/Examples directory.
 
 B. Installation of R, RStudio, and the WLSplot dependencies (see Setting up WLSplot above).
 
