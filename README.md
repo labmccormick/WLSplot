@@ -1,14 +1,12 @@
 # WLSplot
 
+An R library package that turns raw worm lifespan data into an informative survival curve. 
+
 ![plot](./pictures/figure1.jpg?raw=true)
-
-## What is WLSplot? 
-
-WLSplot is an R library package that turns raw worm lifespan data into an informative survival curve.  
 
 ## How does WLSplot work?
 
-The WLS_autoplot() function recognizes and processes raw worm lifespan data in the daughter directories and transforms the data for proper Kaplan-Meir survival plot visualization. This function has the flexibility to analyze RNAi, mutant/genotype, and drug/treatment studies. There are a number of further features and functions of WLSplot-- for more information please see the Examples or the provided manuscript, submitted for publication. 
+The WLS_autoplot() function in this library recognizes, transforms, and plots raw worm lifespan data into Kaplan-Meir survival curves. This function has the flexibility to analyze RNAi, mutant/genotype, or drug/treatment experiments.
 
 # Setting up WLSplot
 
