@@ -39,11 +39,29 @@ devtools::install_github("labmccormick/WLSplot", build_vignettes = TRUE)
 
 ### Prerequisites: 
 
-A. Your computer will need to have LibreOffice installed. To install, please follow the instructions here: https://www.libreoffice.org/get-help/install-howto/.
+A. (OPTIONAL) If you plan on downloading the example data provided in this package, I show how to do so by using "wget." Users are able to use wget if they are on a Mac or Linux operating systems. The wget commands provided here will download the files to the current working directory, i.e. the directory in which the terminal is open (Hint: To see what current folder or directory you’re in, type "pwd" into the terminal). 
 
-B. To plot a worm lifespan, you will need worm lifespan data. The following example will walk you through step-by-step how to plot provided worm lifespan data. If you have your own data, please make sure it is in the format matching the WLS blank spreadsheet provided in the labmccormick/WLSplot/Examples directory. You can download this file by opening it on the web and clicking the download button on the top right corner of the window, or open a terminal and run the following: "wget https://github.com/labmccormick/WLSplot/blob/main/Examples/BLANK_WLS_file.ods".
+If you do not have wget installed, run the following in the terminal:
 
-C. Your computer will need R, RStudio, and the WLSplot dependencies. Follow the instructions provided in the previous section to accomplish this prerequisite.
+Mac OS
+```
+brew install wget
+```
+
+Linux distribution:
+```
+sudo apt update && sudo apt upgrade -y
+sudo apt install wget
+```
+
+B. Your computer will need to have LibreOffice installed. To install, please follow the instructions here: https://www.libreoffice.org/get-help/install-howto/.
+
+C. To plot a worm lifespan, you will need worm lifespan data. The following example will walk you through step-by-step how to plot provided worm lifespan data. If you have your own data, please make sure it is in the format matching the WLS blank spreadsheet provided in the labmccormick/WLSplot/Examples directory. You can download this file by opening it on the web and clicking the download button on the top right corner of the window, or open a terminal and run the following: 
+```
+wget https://github.com/labmccormick/WLSplot/blob/main/Examples/BLANK_WLS_file.ods.
+```
+
+D. Your computer will need R, RStudio, and the WLSplot dependencies. Follow the instructions provided in the previous section to accomplish this prerequisite.
 
 ## WLSplot standard operating procedure
 
