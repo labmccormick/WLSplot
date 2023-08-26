@@ -51,12 +51,23 @@ C. Your computer will need R, RStudio, and the WLSplot dependencies. Follow the 
 
 ![plot](./pictures/Directory.jpg?raw=true)
 
-2. Create a new directory within this one and save the .ods lifespan files of interest there. For the example, I name this new directory Lifespan_1 and then download the .ods files provided in Examples/WLS_autoplot/Lifespan_1/ and save them there, as imaged below. You can initially download these files by A) using the wget command in the terminal in the created Lifespan_1 directory (e.g. "wget https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/N2.ods") or B) by navigating to the file you'd like to download and click the download button on the top right of the page.
+2. Create a new daughter directory within your new directory. This daughter directory will contain the ods files of raw worm lifespan data. For the example, I name this daughter directory "Lifespan_1" and within, I save the ods files provided in ./Examples/WLS_autoplot/Lifespan_1/, as imaged below. These files can be individually downloaded by opening them up on github and clicking the download button on the top right of the window, or you can run the following in the terminal:
+```
+wget https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/N2.ods https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/N2.ods
+wget https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/N2.ods https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/daf-2.ods
+wget https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/N2.ods https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/yfg-1.ods
+wget https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/N2.ods https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/yfg-2.ods
+```
+To move onto step 3, you should have these ods files in the new daughter directory created in this step as seen below. 
 
 ![plot](./pictures/Directory_odsfiles.jpg?raw=true)
 ![plot](./pictures/odsfiles.jpg?raw=true)
 
-2. Go back to the first directory you made and create an R file where we will run WLS_autoplot(). For the example, I enter the Example_WLSplot directory and download the R file Examples/WLS_autoplot/Example_WLS_autoplot.R and place it in this directory. (you can use the following command in the terminal to download the R file: "wget https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Example_WLS_autoplot.R")
+3. Navigate out of the daughter directory, and create an R file to run the WLS_autoplot() function. For the example, I download the R file Examples/WLS_autoplot/Example_WLS_autoplot.R and place it in this directory. This can be done by opening this file and clicking the download button the the top right of the screen, or by running the following command in the terminal:
+```
+wget https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Example_WLS_autoplot.R
+```
+At this point, the example looks like the following:
 
 ![plot](./pictures/Directory_Rfile.jpg?raw=true)
 
@@ -64,7 +75,7 @@ C. Your computer will need R, RStudio, and the WLSplot dependencies. Follow the 
 
 ![plot](./pictures/RStudio_example.jpg?raw=true)
 
-5. You can now run this script line by line by pressing Ctrl + Enter, or the entire script with Ctrl + Shift + Enter.
+5. You can now run this script line-by-line by pressing Ctrl + Enter, or the entire script with Ctrl + Shift + Enter. 
 
 6. When complete, running the script should result in svg files written out to the directory with the ods files. For the example, the svgs are in the Lifespan_1 directory. 
 
