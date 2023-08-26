@@ -283,7 +283,13 @@ WLS_autoplot <- function (lifespan_type = "RNAi", #this is where you put in what
 
       # use the log rank stats test that is able to use censored data
       # https://www.emilyzabor.com/tutorials/survival_analysis_in_r_tutorial.html#Comparing_survival_times_between_groups
-      stats_pval <- survdiff(Surv(Day, status) ~ label_, data = for_stats)$pvalue
+      stats_result <- survdiff(Surv(Day, status) ~ label_, data = for_stats)
+      
+      stats_result_out <- data.frame("label" = experimental_condition, "p-value" = stats_result$pvalue, "")
+      
+      write.csv(x = capture.output(stats_result), paste0(gsub("<","", gsub("/", "", gsub("i>", "",experimental_condition))), ".csv"))
+      
+      stats_pval <- stats_result$pvalue
       if (stats_pval < 0.001){
         lifespan_data$asterisk[lifespan_data$label_ ==  experimental_condition] <- "***"
       } else if (stats_pval < 0.01){
@@ -376,10 +382,10 @@ WLS_autoplot <- function (lifespan_type = "RNAi", #this is where you put in what
       #now we must plot the significant ones one by one
       result_significant <- lifespan_data[lifespan_data$asterisk %in% c("*","**","***") |
                                   grepl(paste0(control), lifespan_data$label),]
-
       i = 0
       for (label_significant_lifespan in unique(result_significant$label[grepl(paste0(control), result_significant$label)==F]))  {
         i <- i + 1
+
         #fitting the kap meir survival curve
         km_fit <- survfit(Surv(Day, status) ~ label, data=result_significant[result_significant$label == label_significant_lifespan |
                                                                                grepl(paste0(control), result_significant$label),])
@@ -498,7 +504,11 @@ WLS_autoplot <- function (lifespan_type = "RNAi", #this is where you put in what
 
         # use the log rank stats test that is able to use censored data
         # https://www.emilyzabor.com/tutorials/survival_analysis_in_r_tutorial.html#Comparing_survival_times_between_groups
-        stats_pval <- survdiff(Surv(Day, status) ~ label_, data = for_stats)$pvalue
+        stats_result <- survdiff(Surv(Day, status) ~ label_, data = for_stats)
+        
+        write.csv(x = capture.output(stats_result), paste0(gsub("<","", gsub("/", "", gsub("i>", "",experimental_condition))), ".csv"))
+        
+        stats_pval <- stats_result$pvalue
         if (stats_pval < 0.001){
           lifespan_data$asterisk[lifespan_data$label_ ==  experimental_condition] <- "***"
         } else if (stats_pval < 0.01){
