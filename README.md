@@ -1,6 +1,6 @@
 # WLSplot
 
-An R library package that turns raw worm lifespan data into an informative survival curve. 
+An R package that turns raw worm lifespan data into an informative survival curve. 
 
 ![plot](./pictures/figure1.jpg?raw=true)
 
