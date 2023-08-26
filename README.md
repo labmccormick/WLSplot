@@ -39,7 +39,7 @@ devtools::install_github("labmccormick/WLSplot", build_vignettes = TRUE)
 
 ### Prerequisites: 
 
-A. (OPTIONAL) Users will be able to download example files using "wget" if they are on a Mac or Linux operating system. The wget commands provided in the protocol below will download the files to the current working directory, i.e. the directory in which the terminal is open (Hint: To see what current folder or directory you’re in, type "pwd" into the terminal). 
+A. (OPTIONAL) Users will be able to download example files using "wget" if they are on a Mac or Linux operating system. The wget commands provided in the protocol below will download the files to the current working directory, i.e. the directory in which the terminal is open (Hint: To see what current folder or directory you’re in, type "pwd" into the terminal). If users are on a Windows operating system, we recommend downloading the files by opening them in your web browser and clicking the download button on the top right of the window. 
 
 If you do not have wget installed, run the following in the terminal:
 
