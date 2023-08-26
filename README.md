@@ -58,7 +58,7 @@ B. Your computer will need to have LibreOffice installed. To install, please fol
 
 C. To plot a worm lifespan, you will need worm lifespan data. The following example will walk you through step-by-step how to plot provided worm lifespan data. If you have your own data, please make sure it is in the format matching the WLS blank spreadsheet provided in the labmccormick/WLSplot/Examples directory. You can download this file by opening it on the web and clicking the download button on the top right corner of the window, or by running the following in the terminal: 
 ```
-wget https://github.com/labmccormick/WLSplot/blob/main/Examples/BLANK_WLS_file.ods.
+wget https://github.com/labmccormick/WLSplot/blob/main/Examples/BLANK_WLS_file.ods
 ```
 
 D. Your computer will need R, RStudio, and the WLSplot dependencies. Follow the instructions provided in the previous section to accomplish this prerequisite.
