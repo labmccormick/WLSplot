@@ -71,7 +71,7 @@ At this point, the example looks like the following:
 
 ![plot](./pictures/Directory_Rfile.jpg?raw=true)
 
-4. Open the R file with RStudio. For the example, I open Example_WLS_autoplot.R.
+4. Open the R file with RStudio. For the example, I open Example_WLS_autoplot.R. This script contains only several lines and should look something like this:
 
 ![plot](./pictures/RStudio_example.jpg?raw=true)
 
