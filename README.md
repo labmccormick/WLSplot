@@ -2,17 +2,13 @@
 
 ![plot](./pictures/figure1.jpg?raw=true)
 
-### Description 
+## What is WLSplot? 
 
-WLSplot is used as a tool that currently supports plotting one variable worm lifespan experiments for RNAi, Treatment/Drug, or Genotype.
+WLSplot is an R library package that turns raw worm lifespan data into an informative survival curve.  
 
-The functions plot worm lifespans based on the experimental control and outputs as an svg. There is also the option to output the worm data calculated for the Kap Meier survival curve. 
+## How does WLSplot work?
 
-#### More specific description of WLSplot functions:
-
-There is one function used to graph the three types of experiments: WLS_autoplot(), where you pass in the "lifespan_type" keyword argument as "Treatment", "RNAi", or "Genotype" experiment. The negative controls, used for stats and plotting, can be passed into the function as keyword arguments for each type of experiment, too. Make sure to check defaults and keyword argument descriptions.
-
-The alternative is to pass in WLS_manualplot(), which is a function that returns a lifespan plot with correctly formatted data for Kaplan-Meier survival curves. With WLS_manualplot, you have the ability to plot multiple variables at a time.
+The WLS_autoplot() function recognizes and processes raw worm lifespan data in the daughter directories and transforms the data for proper Kaplan-Meir survival plot visualization. This function has the flexibility to analyze RNAi, mutant/genotype, and drug/treatment studies. There are a number of further features and functions of WLSplot-- for more information please see the Examples or the provided manuscript, submitted for publication. 
 
 # Setting up WLSplot
 
