@@ -143,7 +143,7 @@ Rscript Example_WLS_autoplot.R
 
 7. When complete, running the script should result in svg files written out to the directory with the ods files. For the example, the svgs are in the Lifespan_1 directory (along with the stats for each sample comparison written out as an csv, not shown). 
 
-![plot](./pictures/svgs_out.jpg?raw=true)
+![plot](./pictures/svgs_out1.jpg?raw=true)
 
 7. Now you can open the svg files with Inkscape and make further edits if you would like. For the example, we created three plots because two of the genotypes lived significantly differently from the control. The plot with all the lifespans should look something like this: 
 
