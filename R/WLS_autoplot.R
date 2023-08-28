@@ -271,7 +271,6 @@ WLS_autoplot <- function (lifespan_type = "RNAi", #this is where you put in what
       if (writeout_data){
         write.csv(lifespan_data, "lifespan_data.csv")
       }
-    }
 
     #STATS TIME
 
@@ -439,6 +438,7 @@ WLS_autoplot <- function (lifespan_type = "RNAi", #this is where you put in what
         dev.off()
       }
     }
+  }
   } else {
     starting_dir <- processed_dir_path
 
