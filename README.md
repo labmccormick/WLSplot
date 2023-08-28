@@ -141,7 +141,7 @@ Mac/Linux users: First, navigate to the directory with the R script using "cd". 
 Rscript Example_WLS_autoplot.R 
 ```
 
-7. When complete, running the script should result in svg files written out to the directory with the ods files. For the example, the svgs are in the Lifespan_1 directory (along with the stats for each sample comparison written out as an csv, not shown). 
+7. When complete, running the script should result in svg files written out to the directory with the ods files. For the example, the svgs are in the Lifespan_1 directory (along with the stats for each sample comparison written out as an csv). 
 
 ![plot](./pictures/svgs_out1.jpg?raw=true)
 
