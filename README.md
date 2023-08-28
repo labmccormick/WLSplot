@@ -109,6 +109,7 @@ Linux:
 ```
 wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Example_WLS_autoplot.R
 ```
+
 At this point, the example looks like the following:
 
 ![plot](./pictures/Directory_Rfile.jpg?raw=true)
