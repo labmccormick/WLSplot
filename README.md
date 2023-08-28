@@ -92,6 +92,13 @@ To move onto step 3, you should have these ods files in the new daughter directo
 ![plot](./pictures/odsfiles.jpg?raw=true)
 
 3. Navigate out of the daughter directory, and create an R file to run the WLS_autoplot() function. For the example, I downloaded the R file Examples/WLS_autoplot/Example_WLS_autoplot.R and placed it in this directory. This can be done by opening this file and clicking the download button the the top right of the screen, or by running the following command in the terminal:
+
+Mac: 
+```
+wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Example_WLS_autoplot.R
+```
+
+Linux:
 ```
 wget https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Example_WLS_autoplot.R
 ```
