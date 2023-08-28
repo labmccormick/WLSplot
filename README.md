@@ -135,7 +135,8 @@ At this point, the example looks like the following:
 
 5. You can now run this script line-by-line by pressing Ctrl + Enter, or the entire script with Ctrl + Shift + Enter. Or, you can run the following in the terminal:
 
-Mac/Linux users:
+Mac/Linux users: First, navigate to the directory with the R script using "cd". e.g. "cd ~/Example_WLS_plot/"
+
 ```
 Rscript Example_WLS_autoplot.R 
 ```
