@@ -148,3 +148,5 @@ Rscript Example_WLS_autoplot.R
 7. Now you can open the svg files with Inkscape and make further edits if you would like. For the example, we created three plots because two of the genotypes lived significantly differently from the control. The plot with all the lifespans should look something like this: 
 
 ![plot](./pictures/example_lifespan.jpg?raw=true)
+
+Other examples on the flexibility and functionality of WLS_autoplo() are provided in the Examples/ directory. There, the user will find the scripts and files to run RNAi and drug/treatment lifespan experiments. There is also an example showing how the script can batch analyze multiple lifespan experiments in one command. 
