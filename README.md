@@ -45,7 +45,7 @@ A. (OPTIONAL) Users will be able to download example files using "wget" if they 
 
 If you do not have wget installed, run the following in the terminal:
 
-Mac OS:
+Mac OS: (Check to see if you have homebrew installed by typing "brew" into the terminal. If you do not have homebrew installed, see this guide on how to install: https://docs.brew.sh/Installation)
 ```
 brew install wget
 ```
