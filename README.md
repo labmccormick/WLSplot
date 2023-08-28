@@ -42,7 +42,7 @@ A. (OPTIONAL) Users will be able to download example files using "wget" if they 
 
 Windows:
 
-If users are on a Windows operating system, we recommend downloading the files by opening them in your web browser and clicking the download button on the top right of the window. 
+If users are on a Windows operating system, we recommend downloading the files by opening them in your web browser and clicking the download button on the top right of the window:
 
 ![plot](./pictures/downloadbutton.jpg?raw=true)
 
