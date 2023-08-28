@@ -76,7 +76,7 @@ D. Your computer will need R, RStudio, and the WLSplot dependencies. Follow the 
 
 ![plot](./pictures/Directory.jpg?raw=true)
 
-2. Create a new daughter directory within your new directory. This daughter directory will contain the ods files of raw worm lifespan data. For the example, I name this daughter directory "Lifespan_1" and within, I save the ods files provided in ./Examples/WLS_autoplot/Lifespan_1/, as imaged below. These files can be individually downloaded by opening them up on GitHub and clicking the download button on the top right of the window, or you can run the following in the terminal:
+2. Create a new daughter directory within your new directory. This daughter directory will contain the ods files of raw worm lifespan data. The purpose of this organization is so that you can analyze many different lifespans at once with one script. For the example, I name this daughter directory "Lifespan_1" and within, I save the ods files provided in ./Examples/WLS_autoplot/Lifespan_1/, as imaged below. These files can be individually downloaded by opening them up on GitHub and clicking the download button on the top right of the window, or you can run the following in the terminal:
 
 Mac OS:
 ```
