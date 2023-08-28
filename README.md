@@ -20,7 +20,7 @@ In general, R will warn you if package dependencies outside of R are missing and
 
 You may need to install freetype 2 and related libraries on your machine outside of R before installing the R systemfonts and pkgdown packages. 
 
-**E.g. if you are running Ubuntu or a deb-based linux distribution, you may have to run the following in the terminal:**
+**e.g. if you are running Ubuntu or a deb-based linux distribution, you may have to run the following in the terminal:**
 
 ```
 sudo apt update && sudo apt upgrade -y
