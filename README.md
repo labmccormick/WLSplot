@@ -13,8 +13,6 @@ The WLS_autoplot() function in this library recognizes, transforms, and plots ra
 2. Install the WLSplot dependencies. You can do this by opening RStudio/R and running the following:
 
 ```
-rm(list = ls())
-
 install.packages(c("ragg","pkgdown","scales", "systemfonts", "textshaping", "devtools", "readODS", "ggplot2", "svglite", "RColorBrewer", "ggExtra", "survival", "ggtext", "ggfortify", "plyr", "markdown"))
 ```
 
