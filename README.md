@@ -118,9 +118,12 @@ At this point, the example looks like the following:
 
 ![plot](./pictures/RStudio_example.jpg?raw=true)
 
-5. You can now run this script line-by-line by pressing Ctrl + Enter, or the entire script with Ctrl + Shift + Enter. 
+5. You can now run this script line-by-line by pressing Ctrl + Enter, or the entire script with Ctrl + Shift + Enter. Or, you can run the following in the terminal:
+```
+Rscript Example_WLS_autoplot.R 
+```
 
-6. When complete, running the script should result in svg files written out to the directory with the ods files. For the example, the svgs are in the Lifespan_1 directory (along with the stats for each sample comparison written out as an csv, not shown). 
+7. When complete, running the script should result in svg files written out to the directory with the ods files. For the example, the svgs are in the Lifespan_1 directory (along with the stats for each sample comparison written out as an csv, not shown). 
 
 ![plot](./pictures/svgs_out.jpg?raw=true)
 
