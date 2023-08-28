@@ -65,7 +65,7 @@ wget https://github.com/labmccormick/WLSplot/raw/main/Examples/BLANK_WLS_file.od
 
 Linux:
 ```
-wget https://github.com/labmccormick/WLSplot/blob/main/Examples/BLANK_WLS_file.ods
+wget https://github.com/labmccormick/WLSplot/raw/main/Examples/BLANK_WLS_file.ods
 ```
 
 D. Your computer will need R, RStudio, and the WLSplot dependencies. Follow the instructions provided in the previous section to accomplish this prerequisite.
@@ -88,10 +88,10 @@ wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Life
 
 Linux:
 ```
-wget https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/N2.ods
-wget https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/daf-2.ods
-wget https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/yfg-1.ods
-wget https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/yfg-2.ods
+wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Lifespan_1/N2.ods
+wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Lifespan_1/daf-2.ods
+wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Lifespan_1/yfg-1.ods
+wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Lifespan_1/yfg-2.ods
 ```
 To move onto step 3, you should have these ods files in the new daughter directory created in this step as seen below. 
 
@@ -107,7 +107,7 @@ wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Exam
 
 Linux:
 ```
-wget https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Example_WLS_autoplot.R
+wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Example_WLS_autoplot.R
 ```
 At this point, the example looks like the following:
 
