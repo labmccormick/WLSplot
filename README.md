@@ -44,6 +44,8 @@ Windows:
 
 If users are on a Windows operating system, we recommend downloading the files by opening them in your web browser and clicking the download button on the top right of the window. 
 
+![plot](./pictures/downloadbutton.jpg?raw=true)
+
 If you do not have wget installed, run the following in the terminal:
 
 Mac OS: (Check to see if you have homebrew installed by typing "brew" into the terminal. If you do not have homebrew installed, see this guide on how to install: https://docs.brew.sh/Installation)
