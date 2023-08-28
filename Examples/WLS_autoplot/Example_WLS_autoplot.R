@@ -4,7 +4,9 @@
 rm(list = ls())
 
 # this sets the working directory to this script's path
-setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+if (isRStudio <- Sys.getenv("RSTUDIO") == "1"){
+  setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+  }
 
 # libraries required for WLSplot
 require(scales)
