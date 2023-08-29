@@ -40,9 +40,9 @@ devtools::install_github("labmccormick/WLSplot", build_vignettes = TRUE)
 
 A. (OPTIONAL) Users will be able to download example files using "wget" if they are on a Mac or Linux operating system. The wget commands provided in the protocol below will download the files to the current working directory, i.e. the directory in which the terminal is open (Hint: To see what current folder or directory you’re in, type "pwd" into the terminal). 
 
-Windows:
+Windows (or if inexperienced with using the terminal):
 
-If users are on a Windows operating system, we recommend downloading the files by opening them in your web browser and clicking the download button on the top right of the window:
+If users are on a Windows operating system or inexperienced with using the terminal, we recommend downloading the files by opening them in your web browser and clicking the download button on the top right of the window:
 
 ![plot](./pictures/downloadbutton.jpg?raw=true)
 
@@ -63,7 +63,7 @@ B. Your computer will need to have LibreOffice installed. To install, please fol
 
 C. To plot a worm lifespan, you will need worm lifespan data. The following example will walk you through step-by-step how to plot provided worm lifespan data. If you have your own data, please make sure it is in the format matching the WLS blank spreadsheet provided in the labmccormick/WLSplot/Examples directory. You can download this file by opening it on the web and clicking the download button on the top right corner of the window, or by running the following in the terminal: 
 
-Windows:
+Windows (or if inexperienced with using the terminal):
 
 We recommend the user download files individually by opening them up on the GitHub web interface and clicking the download button on the top right of the window.
 
@@ -87,7 +87,7 @@ D. Your computer will need R, RStudio, and the WLSplot dependencies. Follow the 
 
 2. Create a new daughter directory within your new directory. This daughter directory will contain the ods files of raw worm lifespan data. The purpose of this organization is so that you can analyze many different lifespans at once with one script. For the example, I name this daughter directory "Lifespan_1" and within, I save the ods files provided in ./Examples/WLS_autoplot/Lifespan_1/, as imaged below. These files can be individually downloaded by opening them up on GitHub and clicking the download button on the top right of the window, or you can run the following in the terminal:
 
-Windows:
+Windows (or if inexperienced with using the terminal):
 
 We recommend the user download files individually by opening them up on the GitHub web interface and clicking the download button on the top right of the window.
 
@@ -113,7 +113,7 @@ To move onto step 3, you should have these ods files in the new daughter directo
 
 3. Navigate out of the daughter directory, and create an R file to run the WLS_autoplot() function. For the example, I downloaded the R file Examples/WLS_autoplot/Example_WLS_autoplot.R and placed it in this directory. This can be done by opening this file and clicking the download button the the top right of the screen, or by running the following command in the terminal:
 
-Windows:
+Windows (or if inexperienced with using the terminal):
 
 We recommend the user download files individually by opening them up on the GitHub web interface and clicking the download button on the top right of the window.
 
