@@ -69,6 +69,8 @@ Windows (or if inexperienced with using the terminal):
 
 We recommend the user download files individually by opening them up on the GitHub web interface and clicking the download button on the top right of the window.
 
+Link: https://github.com/labmccormick/WLSplot/blob/main/Examples/BLANK_WLS_file.ods
+
 Mac OS:
 ```
 wget https://github.com/labmccormick/WLSplot/raw/main/Examples/BLANK_WLS_file.ods
@@ -93,20 +95,22 @@ Windows (or if inexperienced with using the terminal):
 
 We recommend the user download files individually by opening them up on the GitHub web interface and clicking the download button on the top right of the window.
 
+Links: https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/N2.ods; https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/yfg-1.ods; https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/yfg-2.ods; https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/yfg-3.ods
+
 Mac OS:
 ```
 wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Lifespan_1/N2.ods
-wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Lifespan_1/yfg-3.ods
 wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Lifespan_1/yfg-1.ods
 wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Lifespan_1/yfg-2.ods
+wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Lifespan_1/yfg-3.ods
 ```
 
 Linux:
 ```
 wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Lifespan_1/N2.ods
-wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Lifespan_1/yfg-3.ods
 wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Lifespan_1/yfg-1.ods
 wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Lifespan_1/yfg-2.ods
+wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Lifespan_1/yfg-3.ods
 ```
 To move onto step 3, you should have these ods files in the new daughter directory created in this step as seen below. 
 
@@ -118,6 +122,8 @@ To move onto step 3, you should have these ods files in the new daughter directo
 Windows (or if inexperienced with using the terminal):
 
 We recommend the user download files individually by opening them up on the GitHub web interface and clicking the download button on the top right of the window.
+
+Link: https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Example_WLS_autoplot.R
 
 Mac OS: 
 ```
@@ -137,7 +143,7 @@ At this point, the example looks like the following:
 
 ![plot](./pictures/RStudio_example.jpg?raw=true)
 
-5. You can now run this script line-by-line by pressing Ctrl + Enter, or the entire script with Ctrl + Shift + Enter. Or, you can run the following in the terminal:
+5. You can now run this script line-by-line by pressing Ctrl + Enter, or the entire script with Ctrl + Shift + Enter when opened with RStudio. Or, you can run the following in the terminal:
 
 Mac/Linux users: First, navigate to the directory with the R script using "cd". e.g. "cd ~/Example_WLS_plot/"
 
