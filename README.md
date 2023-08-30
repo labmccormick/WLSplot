@@ -25,7 +25,7 @@ You may need to install freetype 2 and related libraries on your machine outside
 ```
 sudo apt update && sudo apt upgrade -y
 
-sudo apt install libfontconfig1-dev libharfbuzz-dev libfribidi-dev libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev liblapack-dev libopenblas-dev
+sudo apt install libfontconfig1-dev libharfbuzz-dev libfribidi-dev libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev liblapack-dev libopenblas-dev libxml2-dev
 
 ```
 
