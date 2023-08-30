@@ -16,7 +16,7 @@ The WLS_autoplot() function in this library recognizes, transforms, and plots ra
 install.packages(c("xml2", "ragg", "pkgdown", "scales", "systemfonts", "textshaping", "devtools", "readODS", "ggplot2", "svglite", "RColorBrewer", "ggExtra", "survival", "ggtext", "ggfortify", "plyr", "markdown"))
 ```
 
-In general, R will warn you if package dependencies outside of R are missing and it easiest to see these when installing the R libraries below one at a time if you run into any unforeseen snags. 
+In general, R will warn you if package dependencies outside of R are missing and it is easiest to see these when installing the R libraries below one at a time if you run into any unforeseen snags. 
 
 You may need to install freetype 2 and related libraries on your machine outside of R before installing the R systemfonts and pkgdown packages. 
 
@@ -39,7 +39,7 @@ devtools::install_github("labmccormick/WLSplot", build_vignettes = TRUE)
 
 ### Prerequisites: 
 
-If you are unfamiliar with the terminal, the example below shows how to download files by just using the GitHub web interface. If you'd like to learn how to use the terminal, we recommend looking at beginner tutorials like this: https://www.freecodecamp.org/news/command-line-for-beginners/
+**If you are unfamiliar with the terminal,** the example below shows how to download files by just using the GitHub web interface. If you'd like to learn how to use the terminal, we recommend looking at beginner tutorials like this: https://www.freecodecamp.org/news/command-line-for-beginners/
 
 A. (OPTIONAL) Users will be able to download example files using "wget" if they are on a Mac or Linux operating system. The wget commands provided in the protocol below will download the files to the current working directory, i.e. the directory in which the terminal is open (Hint: To see what current folder or directory you’re in, type "pwd" into the terminal). 
 
