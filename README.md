@@ -39,7 +39,7 @@ devtools::install_github("labmccormick/WLSplot", build_vignettes = TRUE)
 
 ### Prerequisites: 
 
-**If you are unfamiliar with the terminal,** the example below shows how to download files by just using the GitHub web interface. If you'd like to learn how to use the terminal, we recommend looking at beginner tutorials like this: https://www.freecodecamp.org/news/command-line-for-beginners/
+#### If you are unfamiliar with the terminal, the example below shows how to download files by just using the GitHub web interface. If you'd like to learn how to use the terminal, we recommend looking at beginner tutorials like this: https://www.freecodecamp.org/news/command-line-for-beginners/
 
 A. (OPTIONAL) Users will be able to download example files using "wget" if they are on a Mac or Linux operating system. The wget commands provided in the protocol below will download the files to the current working directory, i.e. the directory in which the terminal is open (Hint: To see what current folder or directory you’re in, type "pwd" into the terminal). 
 
