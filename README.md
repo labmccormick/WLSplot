@@ -13,7 +13,7 @@ The WLS_autoplot() function in this library recognizes, transforms, and plots ra
 2. Install the WLSplot dependencies. You can do this by opening RStudio/R and running the following:
 
 ```
-install.packages(c("ragg","pkgdown","scales", "systemfonts", "textshaping", "devtools", "readODS", "ggplot2", "svglite", "RColorBrewer", "ggExtra", "survival", "ggtext", "ggfortify", "plyr", "markdown"))
+install.packages(c("xml2", "ragg", "pkgdown", "scales", "systemfonts", "textshaping", "devtools", "readODS", "ggplot2", "svglite", "RColorBrewer", "ggExtra", "survival", "ggtext", "ggfortify", "plyr", "markdown"))
 ```
 
 In general, R will warn you if package dependencies outside of R are missing and it easiest to see these when installing the R libraries below one at a time if you run into any unforeseen snags. 
