@@ -160,4 +160,4 @@ Rscript Example_WLS_autoplot.R
 
 ![plot](./pictures/example_lifespan1.jpg?raw=true)
 
-Other examples on the flexibility and functionality of WLS_autoplo() are provided in the Examples/ directory. There, the user will find the scripts and files to run RNAi and drug/treatment lifespan experiments. There is also an example showing how the script can batch analyze multiple lifespan experiments in one command. 
+Other examples on the flexibility and functionality of WLS_autoplot() are provided in the Examples/ directory. There, the user will find the scripts and files to run RNAi and drug/treatment lifespan experiments. There is also an example showing how the script can batch analyze multiple lifespan experiments in one command. 
