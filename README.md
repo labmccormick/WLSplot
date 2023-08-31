@@ -8,7 +8,7 @@ The WLS_autoplot() function in this library recognizes, transforms, and plots ra
 
 # Setting up WLSplot
 
-Walk-through tutorial on how to set up WLSplot on Ubuntu (done similarly on Mac): https://youtu.be/R_BCgvE1z6A
+Walk-through tutorial on how to set up WLSplot: https://youtu.be/R_BCgvE1z6A
 
 1. Install R and RStudio. Follow the tutorial here: https://rstudio-education.github.io/hopr/starting.html
 
@@ -39,7 +39,8 @@ devtools::install_github("labmccormick/WLSplot", build_vignettes = TRUE)
 
 # Running WLSplot: An example
 
-Walk-through tutorial on how to run WLSplot on Ubuntu (done similarly on Mac): https://youtu.be/icIVJVcGa_8
+Walk-through tutorial on how to run WLSplot: https://youtu.be/icIVJVcGa_8
+Running WLSplot on Windows: https://youtu.be/pB6MsHuOFZk
 
 ### Prerequisites: 
 
