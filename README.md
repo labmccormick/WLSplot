@@ -12,7 +12,7 @@ Walk-through tutorial on how to set up WLSplot: https://youtu.be/R_BCgvE1z6A
 
 1. Install R and RStudio. Follow the tutorial here: https://rstudio-education.github.io/hopr/starting.html
 
-2. Install the WLSplot dependencies. You can do this by opening RStudio/R and running the following:
+2. Install the WLSplot dependencies. You can do this by opening RStudio/R and running the following in the R Console:
 
 ```
 install.packages(c("xml2", "ragg", "pkgdown", "scales", "systemfonts", "textshaping", "devtools", "readODS", "ggplot2", "svglite", "RColorBrewer", "ggExtra", "survival", "ggtext", "ggfortify", "plyr", "markdown"))
@@ -22,7 +22,7 @@ In general, R will warn you if package dependencies outside of R are missing and
 
 You may need to install freetype 2 and related libraries on your machine outside of R before installing the R systemfonts and pkgdown packages. 
 
-**e.g. if you are running Ubuntu or a deb-based linux distribution, you may have to run the following in the terminal (open terminal with Ctrl + Alt + T):**
+**e.g. if you are running Ubuntu or a deb-based linux distribution, you may have to run the following in the Terminal (open terminal with Ctrl + Alt + T):**
 
 ```
 sudo apt update && sudo apt upgrade -y
@@ -31,7 +31,7 @@ sudo apt install libfontconfig1-dev libharfbuzz-dev libfribidi-dev libfreetype6-
 
 ```
 
-3. Install WLSplot from GitHub by running the following in RStudio/R:
+3. Install WLSplot from GitHub by running the following in the RStudio/R Console:
 
 ```
 devtools::install_github("labmccormick/WLSplot", build_vignettes = TRUE)
@@ -54,14 +54,14 @@ If users are on a Windows operating system or inexperienced with using the termi
 
 ![plot](./pictures/downloadbutton.jpg?raw=true)
 
-If you do not have wget installed, run the following in the terminal:
+If you do not have wget installed, run the following in the Terminal:
 
-Mac OS: (Check to see if you have homebrew installed by typing "brew" into the terminal. If you do not have homebrew installed, see this guide on how to install: https://docs.brew.sh/Installation)
+Mac OS (in Terminal): (Check to see if you have homebrew installed by typing "brew" into the terminal. If you do not have homebrew installed, see this guide on how to install: https://docs.brew.sh/Installation)
 ```
 brew install wget
 ```
 
-Linux:
+Linux (in Terminal):
 ```
 sudo apt update && sudo apt upgrade -y
 sudo apt install wget
@@ -69,7 +69,7 @@ sudo apt install wget
 
 B. Your computer will need to have LibreOffice installed. To install, please follow the instructions here: https://www.libreoffice.org/get-help/install-howto/.
 
-C. To plot a worm lifespan, you will need worm lifespan data. The following example will walk you through step-by-step how to plot provided worm lifespan data. If you have your own data, please make sure it is in the format matching the WLS blank spreadsheet provided in the labmccormick/WLSplot/Examples directory. You can download this file by opening it on the web and clicking the download button on the top right corner of the window, or by running the following in the terminal: 
+C. To plot a worm lifespan, you will need worm lifespan data. The following example will walk you through step-by-step how to plot provided worm lifespan data. If you have your own data, please make sure it is in the format matching the WLS blank spreadsheet provided in the labmccormick/WLSplot/Examples directory. You can download this file by opening it on the web and clicking the download button on the top right corner of the window, or by running the following in the Terminal: 
 
 Windows (or if inexperienced with using the terminal):
 
@@ -77,17 +77,19 @@ We recommend the user download files individually by opening them up on the GitH
 
 Link: https://github.com/labmccormick/WLSplot/blob/main/Examples/BLANK_WLS_file.ods
 
-Mac OS:
+Mac OS (in Terminal):
 ```
 wget https://github.com/labmccormick/WLSplot/raw/main/Examples/BLANK_WLS_file.ods
 ```
 
-Linux:
+Linux (in Terminal):
 ```
 wget https://github.com/labmccormick/WLSplot/raw/main/Examples/BLANK_WLS_file.ods
 ```
 
 D. Your computer will need R, RStudio, and the WLSplot dependencies. Follow the instructions provided in the previous section to accomplish this prerequisite.
+
+E. WLSplot create svg files, which can be easily opened and edited further in Inkscape. To install, see https://inkscape.org/
 
 ## WLSplot standard operating procedure
 
@@ -103,7 +105,7 @@ We recommend the user download files individually by opening them up on the GitH
 
 Links: https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/N2.ods; https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/yfg-1.ods; https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/yfg-2.ods; https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/yfg-3.ods
 
-Mac OS:
+Mac OS (in Terminal):
 ```
 wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Lifespan_1/N2.ods
 wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Lifespan_1/yfg-1.ods
@@ -111,7 +113,7 @@ wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Life
 wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Lifespan_1/yfg-3.ods
 ```
 
-Linux:
+Linux (in Terminal):
 ```
 wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Lifespan_1/N2.ods
 wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Lifespan_1/yfg-1.ods
@@ -131,12 +133,12 @@ We recommend the user download files individually by opening them up on the GitH
 
 Link: https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Example_WLS_autoplot.R
 
-Mac OS: 
+Mac OS (in Terminal): 
 ```
 wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Example_WLS_autoplot.R
 ```
 
-Linux:
+Linux (in Terminal):
 ```
 wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Example_WLS_autoplot.R
 ```
@@ -151,7 +153,7 @@ At this point, the example looks like the following:
 
 5. You can now run this script line-by-line by pressing Ctrl + Enter, or the entire script with Ctrl + Shift + Enter when opened with RStudio. Or, you can run the following in the terminal:
 
-Mac/Linux users: First, navigate to the directory with the R script using "cd". e.g. "cd ~/Example_WLS_plot/"
+Mac/Linux users (in Terminal): First, navigate to the directory with the R script using "cd". e.g. "cd ~/Example_WLS_plot/"
 
 ```
 Rscript Example_WLS_autoplot.R 
