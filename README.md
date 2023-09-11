@@ -61,7 +61,7 @@ Mac OS (in Terminal): (Check to see if you have homebrew installed by typing "br
 brew install wget
 ```
 
-Linux (in Terminal):
+Apt-based Linux, e.g. Ubuntu (in Terminal):
 ```
 sudo apt update && sudo apt upgrade -y
 sudo apt install wget
@@ -82,7 +82,7 @@ Mac OS (in Terminal):
 wget https://github.com/labmccormick/WLSplot/raw/main/Examples/BLANK_WLS_file.ods
 ```
 
-Linux (in Terminal):
+Apt-based Linux, e.g. Ubuntu (in Terminal):
 ```
 wget https://github.com/labmccormick/WLSplot/raw/main/Examples/BLANK_WLS_file.ods
 ```
@@ -113,7 +113,7 @@ wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Life
 wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Lifespan_1/yfg-3.ods
 ```
 
-Linux (in Terminal):
+Apt-based Linux, e.g. Ubuntu (in Terminal):
 ```
 wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Lifespan_1/N2.ods
 wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Lifespan_1/yfg-1.ods
@@ -138,7 +138,7 @@ Mac OS (in Terminal):
 wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Example_WLS_autoplot.R
 ```
 
-Linux (in Terminal):
+Apt-based Linux, e.g. Ubuntu (in Terminal):
 ```
 wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Example_WLS_autoplot.R
 ```
