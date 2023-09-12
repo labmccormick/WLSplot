@@ -187,6 +187,11 @@ WLS_autoplot <- function (lifespan_type = "RNAi", #this is where you put in what
             new_lifespan_ods <- new_lifespan_ods[row_+1:nrow(new_lifespan_ods),2:ncol(new_lifespan_ods)]
             break
           }
+          if (sum(grepl("QR", new_lifespan_ods[row_,]))){
+            colnames(new_lifespan_ods) <- new_lifespan_ods[row_,]
+            new_lifespan_ods <- new_lifespan_ods[row_+1:nrow(new_lifespan_ods),2:ncol(new_lifespan_ods)]
+            break
+          }
         }
         
         for (row_ in 5:nrow(new_lifespan_ods)){
