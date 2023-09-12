@@ -84,7 +84,7 @@ WLS_autoplot <- function (lifespan_type = "RNAi", #this is where you put in what
               write.csv(x = new_lifespan_df, file = paste0(gsub(pattern = "\\.",replacement = "",x = file), sheet_, ".csv"), row.names = FALSE)
             }            
           }
-        } else if ((list.files(pattern=".xlsx")) > 0){
+        } else if (length(list.files(pattern=".xlsx")) > 0){
           for (file in list.files(pattern=".xlsx")){
             for (sheet_ in (readxl::excel_sheets(file))){
               new_lifespan_df <- readxl::read_excel(file, sheet = sheet_)
