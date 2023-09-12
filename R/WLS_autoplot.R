@@ -157,12 +157,8 @@ WLS_autoplot <- function (lifespan_type = "RNAi", #this is where you put in what
             if (sum(grepl("Temp", new_lifespan_ods[row_,]))){
               temperature <- new_lifespan_ods[row_, (grep("Temp", new_lifespan_ods[row_,])+1)] #[row,col] in R
               i=1
-              while (is.na(temperature)) {
-                temperature <- new_lifespan_ods[row_, (grep("Temp", new_lifespan_ods[row_,])+1+i)]
-                i <- i + 1
-                if (i > 50) {
-                  temperature <- ""
-                }
+              if (is.na(temperature)) {
+                temperature <- NA
               }
             }
           }
