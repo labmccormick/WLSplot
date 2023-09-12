@@ -244,23 +244,43 @@ WLS_autoplot <- function (lifespan_type = "RNAi", #this is where you put in what
           strain <- data_summary_$Strain[data_summary_$Day == day_]
           treatment<- data_summary_$Treatment[data_summary_$Day == day_]
           bacteria<- data_summary_$Bacteria[data_summary_$Day == day_]
-          if (censored > 0){
-            worm_res_ <- data.frame("Day" = rep(day_, censored),
-                                    "status" = rep(0, censored),
-                                    "Strain" = rep(strain, censored),
-                                    "Treatment" = rep(treatment, censored),
-                                    "Bacteria" = rep(bacteria, censored))
-            recorded = TRUE
+          if (is.na(censored) == FALSE){
+            if (censored > 0){
+              worm_res_ <- data.frame("Day" = rep(day_, censored),
+                                      "status" = rep(0, censored),
+                                      "Strain" = rep(strain, censored),
+                                      "Treatment" = rep(treatment, censored),
+                                      "Bacteria" = rep(bacteria, censored))
+              recorded = TRUE
+            } 
+          } else {
+            censored <- 0
           }
+          
           dead <- data_summary_$Dead[data_summary_$Day == day_]
-          if (dead > 0){
-            worm_res_ <- data.frame("Day" = rep(day_, dead),
-                                    "status" = rep(1, dead),
-                                    "Strain" = rep(strain, dead),
-                                    "Treatment" = rep(treatment, dead),
-                                    "Bacteria" = rep(bacteria, dead))
-            recorded = TRUE
+          if (is.na(dead) == FALSE){
+            if (dead > 0){
+              
+              if (recorded == TRUE) {
+                worm_res_dead <- data.frame("Day" = rep(day_, dead),
+                                        "status" = rep(1, dead),
+                                        "Strain" = rep(strain, dead),
+                                        "Treatment" = rep(treatment, dead),
+                                        "Bacteria" = rep(bacteria, dead))
+                worm_res_ <- rbind(worm_res_, worm_res_dead)
+              } else {
+                worm_res_ <- data.frame("Day" = rep(day_, dead),
+                                        "status" = rep(1, dead),
+                                        "Strain" = rep(strain, dead),
+                                        "Treatment" = rep(treatment, dead),
+                                        "Bacteria" = rep(bacteria, dead))
+              }
+              recorded = TRUE
+            }
+          } else {
+            dead <- 0
           }
+          
           if (recorded) {
             worm_res <- rbind(worm_res, worm_res_)
           }
