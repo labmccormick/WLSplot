@@ -337,10 +337,10 @@ WLS_autoplot <- function (lifespan_type = "RNAi", #this is where you put in what
       # save the data out as a csv option
       if (return_data){
         setwd(starting_dir)
-        return(lifespan_data)
+        return(lifespan_data[,c("Day", "status", "Strain", "Treatment", "Bacteria", "label_", "N_worms", "MeanWLS")])
       }
       if (writeout_data){
-        write.csv(lifespan_data, "lifespan_data.csv")
+        write.csv(lifespan_data[,c("Day", "status", "Strain", "Treatment", "Bacteria", "label_", "N_worms", "MeanWLS")], "lifespan_data.csv")
       }
 
     #STATS TIME
