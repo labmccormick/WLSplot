@@ -12,4 +12,4 @@ require(scales)
 require(WLSplot)
 
 # Running autoplot, which will automatically go into the the files within this directory to plot lifespans
-WLSplot::WLS_autoplot(lifespan_type = "RNAi", empty_vector = "L4440")
+WLSplot::WLS_autoplot(lifespan_type = "RNAi", empty_vector = "PAD12")

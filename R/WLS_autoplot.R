@@ -79,9 +79,9 @@ WLS_autoplot <- function (lifespan_type = "RNAi", #this is where you put in what
         if (length(list.files(pattern="ods")) > 0) {
           for (file in list.files(pattern = "ods")){
             for (sheet_ in 1:length(readODS::list_ods_sheets(file))){
-              new_lifespan_df <- readODS::read_ods(file, sheet = sheet_)
+              new_lifespan_df <- readODS::read_ods(file, sheet = sheet_, col_names = FALSE)
               new_lifespan_df <- as.data.frame(new_lifespan_df)
-              write.csv(x = new_lifespan_df, file = paste0(file, sheet_, ".csv"))
+              write.csv(x = new_lifespan_df, file = paste0(file, sheet_, ".csv"), row.names = FALSE)
             }            
           }
         } else if ((list.files(pattern="xlsx")) > 0){
