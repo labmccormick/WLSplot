@@ -468,7 +468,7 @@ WLS_autoplot <- function (lifespan_type = "RNAi", #this is where you put in what
         #fitting the kap meir survival curve
         km_fit <- survfit(Surv(Day, status) ~ label, data=result_significant[result_significant$label == label_significant_lifespan |
                                                                                grepl(paste0(control), result_significant$label),])
-
+        suppressMessages(
         plot_out <- autoplot(km_fit,conf.int=FALSE,surv.geom='line',surv.size=1,censor=FALSE) +
           ggtitle("") +
           labs(caption = paste0(caption_))+
@@ -508,6 +508,7 @@ WLS_autoplot <- function (lifespan_type = "RNAi", #this is where you put in what
         Sys.sleep(0.1)
         dev.off()
         Sys.sleep(0.1)
+        )
       }
     }
   }
@@ -715,5 +716,6 @@ WLS_autoplot <- function (lifespan_type = "RNAi", #this is where you put in what
     }
   setwd(starting_dir)
   }
+  print("Completed with no errors")
 }
 
