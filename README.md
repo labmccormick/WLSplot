@@ -40,7 +40,6 @@ devtools::install_github("labmccormick/WLSplot", build_vignettes = TRUE)
 # Running WLSplot: An example
 
 Walk-through tutorial on how to run WLSplot: https://youtu.be/icIVJVcGa_8
-Running WLSplot on Windows: https://youtu.be/pB6MsHuOFZk
 
 ### Prerequisites: 
 
