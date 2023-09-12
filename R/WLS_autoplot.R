@@ -52,7 +52,7 @@ WLS_autoplot <- function (lifespan_type = "RNAi", #this is where you put in what
                           omit_file = "stack", #Pattern of file to omit in the analysis. The McCormick lab uses an ods file with "stack" in the filename to describe the experiment.
                           processed_dir_path = FALSE, #pass in a processed file if you'd like to skip the processing from the raw data collection spreadsheet provided
                           researchers = as.character(c()), #default is to start with an empty vector as researchers.
-                          Temperature = TRUE, #do you want to include the temperature in the plot?
+                          Temperature = FALSE, #do you want to include the temperature in the plot?
                           lifespanfile_convert = FALSE, #if true, this will convert the ods files to csv files for WLS_autoplot
                           censored_plate = 'x' #what is written on the plate if there is a censored plate 
 ){
