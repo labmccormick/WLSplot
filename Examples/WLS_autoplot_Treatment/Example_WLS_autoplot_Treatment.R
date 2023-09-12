@@ -12,4 +12,4 @@ require(scales)
 require(WLSplot)
 
 #Run the autoplot function, which will recognize the .ods file in the current working directory and output svg file(s) into the working directory
-WLSplot::WLS_autoplot(lifespan_type = "Drug", return_data = FALSE)
+WLSplot::WLS_autoplot(lifespan_type = "Treatment", return_data = FALSE, lifespanfile_convert = TRUE, col_list = c("black", "lightblue", "darkblue"))

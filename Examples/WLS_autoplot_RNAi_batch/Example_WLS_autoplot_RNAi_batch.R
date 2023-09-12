@@ -8,6 +8,7 @@ if (isRStudio <- Sys.getenv("RSTUDIO") == "1"){
   setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
   }
 # libraries required for WLSplot
+devtools::install_github("labmccormick/WLSplot")
 require(scales)
 require(WLSplot)
 
