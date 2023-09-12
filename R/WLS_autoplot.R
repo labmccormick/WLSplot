@@ -65,14 +65,15 @@ WLS_autoplot <- function (lifespan_type = "RNAi", #this is where you put in what
     }
 
     for (directory in lifespan_directories){
+      browser()
       #make sure we are starting fresh.
       lifespan_data <- data.frame("Day" = c(), "status" = c(), "Genotype" = c(),
                                   "Treatment"=c(), "Bacteria"=c(), "MeanWLS" = c(), "N_worms" = c())
       
-      directory <- sub(".", "", directory)
+      directory <- sub("\\.", "", directory)
 
       # change the working directory to the directory within the lifespan_directories directory
-      setwd(paste0(starting_dir, directory))
+      setwd(file.path(starting_dir, directory))
       
       #convert the ods or xlsx files to csvs for the WLS_autoplot
       if (lifespanfile_convert) {
@@ -96,8 +97,8 @@ WLS_autoplot <- function (lifespan_type = "RNAi", #this is where you put in what
       }
       
       #for each lifespan file, build the results table that is going to be plotted.
-      lifespan_files = list.files(pattern="\\.csv")[grepl(paste0(omit_file), list.files(pattern="\\.csv"))==FALSE]
-      plot_title = sub("/", "", directory) #Title of the plot. Default is to grab the last directory in the working directory.
+      lifespan_files <- list.files(pattern="\\.csv")[grepl(paste0(omit_file), list.files(pattern="\\.csv"))==FALSE]
+      plot_title <- sub("/", "", directory) #Title of the plot. Default is to grab the last directory in the working directory.
       data_summary <- data.frame("Day" = c(), "Dead" = c(), "Censored" = c(), 
                                  "Bacteria" = c(), "Strain" = c(), "Treatment" = c(),
                                  "Temperature" = c())
@@ -232,7 +233,7 @@ WLS_autoplot <- function (lifespan_type = "RNAi", #this is where you put in what
       
       data_summary$label_ <- paste0(data_summary$Bacteria, data_summary$Strain, data_summary$Treatment)
       
-      #### stopped here
+      ####
       # write.csv(file = "raw_counts_alive_censored_day.csv", x = data_summary)
       worm_res <- data.frame("Day" = c(), "status" = c(), "Strain" = c(),
                              "Treatment" = c(), "Bacteria" = c())
