@@ -40,7 +40,7 @@
 #' 
 WLS_autoplot <- function (lifespan_type = "RNAi", #this is where you put in what the lifespan type is. Accepted inputs: "RNAi", "Genotype", "Drug"
                           plot_individual_lifespans_to_control = TRUE, #if you do not want the individual lifespans plotted, pass in FALSE
-                          lifespan_directories = list.dirs()[list.dirs()!="."], #This gets all the directories in which you want to plot the spreadsheets
+                          lifespan_directories = list.dirs()[list.dirs()!="." & grepl("plots", list.dirs()) == FALSE & grepl("stats", list.dirs()) == FALSE], #This gets all the directories in which you want to plot the spreadsheets
                           return_data = FALSE, #If TRUE, return the data used for plotting. This function cannot be done in batch processing files and will stop at the first directory
                           writeout_data = FALSE, #If TRUE, the data will be written out as a csv.
                           empty_vector = c("L4440", "PAD12"), #If RNAi experiment, this is the empty vector
@@ -60,13 +60,9 @@ WLS_autoplot <- function (lifespan_type = "RNAi", #this is where you put in what
   if (processed_dir_path == FALSE){
     starting_dir <- getwd()
 
-    if (lifespan_directories[1] %in% list.dirs()[list.dirs()!="."] == FALSE){
-      return("Did you put in the correct lifespan_directories?")
-    }
-
     for (directory in lifespan_directories){
       
-      print(directory)
+      print(paste0("Analyzing ", directory))
       
       #make sure we are starting fresh.
       lifespan_data <- data.frame("Day" = c(), "status" = c(), "Genotype" = c(),
