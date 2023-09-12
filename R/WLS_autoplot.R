@@ -113,7 +113,7 @@ WLS_autoplot <- function (lifespan_type = "RNAi", #this is where you put in what
               strain <- new_lifespan_ods[row_, (grep("Strain", new_lifespan_ods[row_,1:10])+1+i)]
               i <- i + 1
               if (i > 50) {
-                strain <- ""
+                strain <- "No strain input"
               }
             }
             
@@ -135,7 +135,7 @@ WLS_autoplot <- function (lifespan_type = "RNAi", #this is where you put in what
               bacteria <- new_lifespan_ods[row_, (grep("Bacteria", new_lifespan_ods[row_,])+1+i)]
               i <- i + 1
               if (i > 50) {
-                bacteria <- ""
+                bacteria <- "No bacteria input"
               }
             }
             break
@@ -146,7 +146,7 @@ WLS_autoplot <- function (lifespan_type = "RNAi", #this is where you put in what
             treatment <- new_lifespan_ods[row_, (grep("Treatment", new_lifespan_ods[row_,])+1)] #[row,col] in R
             i=1
             if (is.na(treatment)) {
-              treatment <- "No"
+              treatment <- "No treatment input"
             }
             break
           }
@@ -158,7 +158,7 @@ WLS_autoplot <- function (lifespan_type = "RNAi", #this is where you put in what
               temperature <- new_lifespan_ods[row_, (grep("Temp", new_lifespan_ods[row_,])+1)] #[row,col] in R
               i=1
               if (is.na(temperature)) {
-                temperature <- "No temp recored"
+                temperature <- "No temp input"
               }
             }
           }
