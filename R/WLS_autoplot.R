@@ -78,7 +78,7 @@ WLS_autoplot <- function (lifespan_type = "RNAi", #this is where you put in what
       setwd(file.path(starting_dir, directory))
       
       #convert the ods or xlsx files to csvs for the WLS_autoplot
-      suppressMessages(
+      suppressWarnings(
       if (lifespanfile_convert) {
         if (length(list.files(pattern="\\.ods")) > 0) {
           for (file in list.files(pattern = "\\.ods")){
