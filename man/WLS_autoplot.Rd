@@ -20,7 +20,9 @@ WLS_autoplot(
   omit_file = "stack",
   processed_dir_path = FALSE,
   researchers = as.character(c()),
-  Temperature = FALSE
+  Temperature = TRUE,
+  lifespanfile_convert = FALSE,
+  censored_plate = "x"
 )
 }
 \arguments{
@@ -53,6 +55,10 @@ WLS_autoplot(
 \item{researchers}{default is to start with an empty vector as researchers.}
 
 \item{Temperature}{If TRUE, the temperature will be provided in the plot.}
+
+\item{lifespanfile_convert}{if TRUE this will convert the ods files to csv files for WLS_autoplot()}
+
+\item{censored_plate}{What the censored plate code is. 'x' by default.}
 }
 \value{
 Function can return the data that is used for lifespan plotting, or it saves lifespan plots out to the working directory.
