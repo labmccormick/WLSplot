@@ -65,7 +65,9 @@ WLS_autoplot <- function (lifespan_type = "RNAi", #this is where you put in what
     }
 
     for (directory in lifespan_directories){
-      browser()
+      
+      print(directory)
+      
       #make sure we are starting fresh.
       lifespan_data <- data.frame("Day" = c(), "status" = c(), "Genotype" = c(),
                                   "Treatment"=c(), "Bacteria"=c(), "MeanWLS" = c(), "N_worms" = c())
@@ -76,6 +78,7 @@ WLS_autoplot <- function (lifespan_type = "RNAi", #this is where you put in what
       setwd(file.path(starting_dir, directory))
       
       #convert the ods or xlsx files to csvs for the WLS_autoplot
+      suppressMessages(
       if (lifespanfile_convert) {
         if (length(list.files(pattern="\\.ods")) > 0) {
           for (file in list.files(pattern = "\\.ods")){
@@ -94,7 +97,7 @@ WLS_autoplot <- function (lifespan_type = "RNAi", #this is where you put in what
             }
           }
         }
-      }
+      })
       
       #for each lifespan file, build the results table that is going to be plotted.
       lifespan_files <- list.files(pattern="\\.csv")[grepl(paste0(omit_file), list.files(pattern="\\.csv"))==FALSE]
