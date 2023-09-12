@@ -78,12 +78,12 @@ WLS_autoplot <- function (lifespan_type = "RNAi", #this is where you put in what
       setwd(file.path(starting_dir, directory))
       
       #convert the ods or xlsx files to csvs for the WLS_autoplot
-      suppressWarnings(
+      
       if (lifespanfile_convert) {
         if (length(list.files(pattern="\\.ods")) > 0) {
           for (file in list.files(pattern = "\\.ods")){
             for (sheet_ in 1:length(readODS::list_ods_sheets(file))){
-              new_lifespan_df <- readODS::read_ods(file, sheet = sheet_, col_names = FALSE)
+              new_lifespan_df <- readODS::read_ods(file, sheet = sheet_, col_names = FALSE, .name_repair = "unique_quiet")
               new_lifespan_df <- as.data.frame(new_lifespan_df)
               write.csv(x = new_lifespan_df, file = paste0(gsub(pattern = "\\.ods",replacement = "",x = file), "_", sheet_, ".csv"), row.names = FALSE)
             }            
@@ -91,13 +91,13 @@ WLS_autoplot <- function (lifespan_type = "RNAi", #this is where you put in what
         } else if (length(list.files(pattern="\\.xlsx")) > 0){
           for (file in list.files(pattern="\\.xlsx")){
             for (sheet_ in (readxl::excel_sheets(file))){
-              new_lifespan_df <- readxl::read_excel(file, sheet = sheet_)
+              new_lifespan_df <- readxl::read_excel(file, sheet = sheet_, .name_repair = "unique_quiet")
               new_lifespan_df <- as.data.frame(new_lifespan_df)
               write.csv(x = new_lifespan_df, file = paste0(gsub(pattern = "\\.xlsx",replacement = "",x = file),"_", sheet_, ".csv"))              
             }
           }
         }
-      })
+      }
       
       #for each lifespan file, build the results table that is going to be plotted.
       lifespan_files <- list.files(pattern="\\.csv")[grepl(paste0(omit_file), list.files(pattern="\\.csv"))==FALSE]
