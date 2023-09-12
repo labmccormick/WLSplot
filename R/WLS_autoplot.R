@@ -224,7 +224,6 @@ WLS_autoplot <- function (lifespan_type = "RNAi", #this is where you put in what
             data_summary_ <- data.frame("Day" = day_, "Dead" = dead, "Censored" = censored, 
                                         "Bacteria" = bacteria, "Strain" = strain, "Treatment" = treatment,
                                         "Temperature" = temperature)
-            data_summary_ <- na.omit(data_summary_)
             data_summary <- rbind(data_summary, data_summary_)
           }
         }
