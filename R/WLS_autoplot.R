@@ -36,8 +36,8 @@
 #
 # This function was written by Blaise Mariner to graph C. elegans lifespans with automated labeling
 # for questions regarding the script or recommended improvements, please email Blaise at blaisemariner17@gmail.com
-#
-
+#'
+#' 
 WLS_autoplot <- function (lifespan_type = "RNAi", #this is where you put in what the lifespan type is. Accepted inputs: "RNAi", "Genotype", "Drug"
                           plot_individual_lifespans_to_control = TRUE, #if you do not want the individual lifespans plotted, pass in FALSE
                           lifespan_directories = list.dirs()[list.dirs()!="."], #This gets all the directories in which you want to plot the spreadsheets
@@ -76,27 +76,27 @@ WLS_autoplot <- function (lifespan_type = "RNAi", #this is where you put in what
       
       #convert the ods or xlsx files to csvs for the WLS_autoplot
       if (lifespanfile_convert) {
-        if (length(list.files(pattern=".ods")) > 0) {
-          for (file in list.files(pattern = ".ods")){
+        if (length(list.files(pattern="\\.ods")) > 0) {
+          for (file in list.files(pattern = "\\.ods")){
             for (sheet_ in 1:length(readODS::list_ods_sheets(file))){
               new_lifespan_df <- readODS::read_ods(file, sheet = sheet_, col_names = FALSE)
               new_lifespan_df <- as.data.frame(new_lifespan_df)
-              write.csv(x = new_lifespan_df, file = paste0(gsub(pattern = "\\.",replacement = "",x = file), sheet_, ".csv"), row.names = FALSE)
+              write.csv(x = new_lifespan_df, file = paste0(gsub(pattern = "\\.ods",replacement = "",x = file), "_", sheet_, ".csv"), row.names = FALSE)
             }            
           }
-        } else if (length(list.files(pattern=".xlsx")) > 0){
-          for (file in list.files(pattern=".xlsx")){
+        } else if (length(list.files(pattern="\\.xlsx")) > 0){
+          for (file in list.files(pattern="\\.xlsx")){
             for (sheet_ in (readxl::excel_sheets(file))){
               new_lifespan_df <- readxl::read_excel(file, sheet = sheet_)
               new_lifespan_df <- as.data.frame(new_lifespan_df)
-              write.csv(x = new_lifespan_df, file = paste0(gsub(pattern = "\\.",replacement = "",x = file), sheet_, ".csv"))              
+              write.csv(x = new_lifespan_df, file = paste0(gsub(pattern = "\\.xlsx",replacement = "",x = file),"_", sheet_, ".csv"))              
             }
           }
         }
       }
       
       #for each lifespan file, build the results table that is going to be plotted.
-      lifespan_files = list.files(pattern=".csv")[grepl(paste0(omit_file), list.files(pattern=".csv"))==FALSE]
+      lifespan_files = list.files(pattern="\\.csv")[grepl(paste0(omit_file), list.files(pattern="\\.csv"))==FALSE]
       plot_title = sub("/", "", directory) #Title of the plot. Default is to grab the last directory in the working directory.
       data_summary <- data.frame("Day" = c(), "Dead" = c(), "Censored" = c(), 
                                  "Bacteria" = c(), "Strain" = c(), "Treatment" = c(),
@@ -189,7 +189,7 @@ WLS_autoplot <- function (lifespan_type = "RNAi", #this is where you put in what
           }
         }
         
-        for (row_ in 1:nrow(new_lifespan_ods)){
+        for (row_ in 5:nrow(new_lifespan_ods)){
           if (is.na(new_lifespan_ods[row_, 1])){
             new_lifespan_ods <- new_lifespan_ods[1:row_-1,]
             break
@@ -238,7 +238,7 @@ WLS_autoplot <- function (lifespan_type = "RNAi", #this is where you put in what
                              "Treatment" = c(), "Bacteria" = c())
       
       for (condition in unique(data_summary$label_)){
-        data_summary_ <- data_summary[data_summary$label == condition,]
+        data_summary_ <- data_summary[data_summary$label_ == condition,]
         for (day_ in data_summary_$Day){
           recorded = FALSE
           censored <- data_summary_$Censored[data_summary_$Day == day_]
