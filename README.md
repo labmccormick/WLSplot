@@ -75,16 +75,16 @@ Windows (or if inexperienced with using the terminal):
 
 We recommend the user download files individually by opening them up on the GitHub web interface and clicking the download button on the top right of the window.
 
-Link: https://github.com/labmccormick/WLSplot/blob/main/Examples/BLANK_WLS_file.ods
+Link: https://github.com/labmccormick/WLSplot/blob/main/Examples/BLANK_WLS_file.csv
 
 Mac OS (in Terminal):
 ```
-wget https://github.com/labmccormick/WLSplot/raw/main/Examples/BLANK_WLS_file.ods
+wget https://github.com/labmccormick/WLSplot/raw/main/Examples/BLANK_WLS_file.csv
 ```
 
 Apt-based Linux, e.g. Ubuntu (in Terminal):
 ```
-wget https://github.com/labmccormick/WLSplot/raw/main/Examples/BLANK_WLS_file.ods
+wget https://github.com/labmccormick/WLSplot/raw/main/Examples/BLANK_WLS_file.csv
 ```
 
 D. Your computer will need R, RStudio, and the WLSplot dependencies. Follow the instructions provided in the previous section to accomplish this prerequisite.
@@ -97,33 +97,33 @@ E. WLSplot create svg files, which can be easily opened and edited further in In
 
 ![plot](./pictures/Directory.jpg?raw=true)
 
-2. Create a new daughter directory within your new directory. This daughter directory will contain the ods files of raw worm lifespan data. The purpose of this organization is so that you can analyze many different lifespans at once with one script. For the example, I name this daughter directory "Lifespan_1" and within, I save the ods files provided in ./Examples/WLS_autoplot/Lifespan_1/, as imaged below. These files can be individually downloaded by opening them up on GitHub and clicking the download button on the top right of the window, or you can run the following in the terminal:
+2. Create a new daughter directory within your new directory. This daughter directory will contain the files of raw worm lifespan data. The purpose of this organization is so that you can analyze many different lifespans at once with one script. For the example, I name this daughter directory "Lifespan_1" and within, I save the csv files provided in ./Examples/WLS_autoplot/Lifespan_1/, as imaged below. These files can be individually downloaded by opening them up on GitHub and clicking the download button on the top right of the window, or you can run the following in the terminal:
 
 Windows (or if inexperienced with using the terminal):
 
 We recommend the user download files individually by opening them up on the GitHub web interface and clicking the download button on the top right of the window.
 
-Links: https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/N2.ods; https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/yfg-1.ods; https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/yfg-2.ods; https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/yfg-3.ods
+Links: https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/N2.csv; https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/yfg-1.csv; https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/yfg-2.csv; https://github.com/labmccormick/WLSplot/blob/main/Examples/WLS_autoplot/Lifespan_1/yfg-3.csv
 
 Mac OS (in Terminal):
 ```
-wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Lifespan_1/N2.ods
-wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Lifespan_1/yfg-1.ods
-wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Lifespan_1/yfg-2.ods
-wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Lifespan_1/yfg-3.ods
+wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Lifespan_1/N2.csv
+wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Lifespan_1/yfg-1.csv
+wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Lifespan_1/yfg-2.csv
+wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Lifespan_1/yfg-3.csv
 ```
 
 Apt-based Linux, e.g. Ubuntu (in Terminal):
 ```
-wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Lifespan_1/N2.ods
-wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Lifespan_1/yfg-1.ods
-wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Lifespan_1/yfg-2.ods
-wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Lifespan_1/yfg-3.ods
+wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Lifespan_1/N2.csv
+wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Lifespan_1/yfg-1.csv
+wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Lifespan_1/yfg-2.csv
+wget https://github.com/labmccormick/WLSplot/raw/main/Examples/WLS_autoplot/Lifespan_1/yfg-3.csv
 ```
-To move onto step 3, you should have these ods files in the new daughter directory created in this step as seen below. 
+To move onto step 3, you should have these csv files in the new daughter directory created in this step as seen below. 
 
 ![plot](./pictures/Directory_odsfiles.jpg?raw=true)
-![plot](./pictures/odsfiles.jpg?raw=true)
+![plot](./pictures/csvfiles.jpg?raw=true)
 
 3. Navigate out of the daughter directory, and create an R file to run the WLS_autoplot() function. For the example, I downloaded the R file Examples/WLS_autoplot/Example_WLS_autoplot.R and placed it in this directory. This can be done by opening this file and clicking the download button the the top right of the screen, or by running the following command in the terminal:
 
@@ -159,9 +159,10 @@ Mac/Linux users (in Terminal): First, navigate to the directory with the R scrip
 Rscript Example_WLS_autoplot.R 
 ```
 
-7. When complete, running the script should result in svg files written out to the directory with the ods files. For the example, the svgs are in the Lifespan_1 directory (along with the stats for each sample comparison written out as an csv). 
+7. When complete, the resulting lifespan svg files should be saved out into a "plots" subdirectory.
 
-![plot](./pictures/svgs_out1.jpg?raw=true)
+![plot](./pictures/dir_out.jpg?raw=true)
+![plot](./pictures/svgplots_out.jpg?raw=true)
 
 7. Now you can open the svg files with Inkscape and make further edits if you would like. For the example, we created three plots because two of the genotypes lived significantly differently from the control. The plot with all the lifespans should look something like this: 
 
