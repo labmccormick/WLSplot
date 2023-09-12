@@ -145,12 +145,8 @@ WLS_autoplot <- function (lifespan_type = "RNAi", #this is where you put in what
           if (sum(grepl("Treatment", new_lifespan_ods[row_,]))){
             treatment <- new_lifespan_ods[row_, (grep("Treatment", new_lifespan_ods[row_,])+1)] #[row,col] in R
             i=1
-            while (is.na(treatment)) {
-              treatment <- new_lifespan_ods[row_, (grep("Treatment", new_lifespan_ods[row_,])+1+i)]
-              i <- i + 1
-              if (i > 50) {
-                treatment <- ""
-              }
+            if (is.na(treatment)) {
+              treatment <- "No"
             }
             break
           }
