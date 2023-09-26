@@ -1,6 +1,6 @@
-# WLSplot
+# WLSplot v1.0
 
-An R package that turns raw worm lifespan data into informative survival curves. 
+WLSplot v1.0 An R package that turns raw worm lifespan data into informative survival curves. 
 
 ![plot](./pictures/figure1.jpg?raw=true)
 
@@ -20,7 +20,7 @@ install.packages(c("xml2", "ragg", "pkgdown", "scales", "systemfonts", "textshap
 
 In general, R will warn you if package dependencies outside of R are missing and it is easiest to see these when installing the R libraries below one at a time if you run into any unforeseen snags. 
 
-You may need to install freetype 2 and related libraries on your machine outside of R before installing the R systemfonts and pkgdown packages. 
+You may need to install freetype 2 (currently v2.11.1) and related libraries on your machine outside of R before installing the R systemfonts and pkgdown packages. 
 
 **e.g. if you are running Ubuntu or a deb-based linux distribution, you may have to run the following in the Terminal (open terminal with Ctrl + Alt + T):**
 
@@ -45,7 +45,7 @@ Walk-through tutorial on how to run WLSplot: https://youtu.be/xWRspLljrvE
 
 #### If you are unfamiliar with the terminal, the example below shows how to download files by just using the GitHub web interface. If you'd like to learn how to use the terminal, we recommend looking at beginner tutorials like this: https://www.freecodecamp.org/news/command-line-for-beginners/
 
-A. (OPTIONAL) Users will be able to download example files using "wget" if they are on a Mac or Linux operating system. The wget commands provided in the protocol below will download the files to the current working directory, i.e. the directory in which the terminal is open (Hint: To see what current folder or directory you’re in, type "pwd" into the terminal). 
+A. (OPTIONAL) Users will be able to download example files using "wget" (currently v 1.21.2) if they are on a Mac or Linux operating system. The wget commands provided in the protocol below will download the files to the current working directory, i.e. the directory in which the terminal is open (Hint: To see what current folder or directory you’re in, type "pwd" into the terminal). 
 
 Windows (or if inexperienced with using the terminal):
 
