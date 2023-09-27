@@ -346,7 +346,7 @@ WLS_autoplot <- function (lifespan_type = "RNAi", #this is where you put in what
 
       if (control_found == FALSE){
         setwd(starting_dir)
-        return("Error. Did you put in the correct empty_vector keyword argument?")
+        return("Error. Did you put in the correct empty_vector or Vehicle keyword argument?")
       }
 
       if (lifespan_type == "Genotype") {
