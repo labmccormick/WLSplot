@@ -2,6 +2,10 @@
 
 WLSplot v1.0 An R package that turns raw worm lifespan data into informative survival curves. 
 
+If used, please citr:
+
+Mariner, BL; Peterson, J; Taylor, JC; Achusim, AT; McCormick, MA (2023). Easy <i>C. elegans</i> Worm Lifespan Plotting and Statistics with WLSplot. <i>microPublication Biology</i>. <a href="https://doi.org/10.17912/micropub.biology.000991" target="_blank" rel="noopener noreferrer">10.17912/micropub.biology.000991</a>.
+
 ![plot](./pictures/figure1.jpg?raw=true)
 
 The WLS_autoplot() function in this library recognizes, transforms, and plots raw worm lifespan data into Kaplan-Meier survival curves. This function has the flexibility to analyze RNAi, mutant/genotype, or drug/treatment experiments while integrating crucial experimental information into the output image, as seen above. 
