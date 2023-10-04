@@ -2,7 +2,7 @@
 
 WLSplot v1.0 An R package that turns raw worm lifespan data into informative survival curves. 
 
-If used, please citr:
+If used, please cite:
 
 Mariner, BL; Peterson, J; Taylor, JC; Achusim, AT; McCormick, MA (2023). Easy <i>C. elegans</i> Worm Lifespan Plotting and Statistics with WLSplot. <i>microPublication Biology</i>. <a href="https://doi.org/10.17912/micropub.biology.000991" target="_blank" rel="noopener noreferrer">10.17912/micropub.biology.000991</a>.
 
