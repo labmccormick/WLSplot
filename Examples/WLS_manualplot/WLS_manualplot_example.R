@@ -9,6 +9,7 @@ if (isRStudio <- Sys.getenv("RSTUDIO") == "1"){
   }
 require(scales)
 require(WLSplot)
+require(survival)
 
 #The following example shows that autoplot can be used to output a matrix that is used for the Kaplan-Meir plotting.
 lifespan_data <- WLSplot::WLS_autoplot(lifespan_type = "Genotype", return_data = TRUE)
