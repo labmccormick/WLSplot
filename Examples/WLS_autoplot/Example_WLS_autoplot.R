@@ -11,6 +11,7 @@ if (isRStudio <- Sys.getenv("RSTUDIO") == "1"){
 # libraries required for WLSplot
 require(scales)
 require(WLSplot)
+require(survival)
 
 #run the autoplot function, which will recognize automatically the .ods files in the current working directory.
 WLSplot::WLS_autoplot(lifespan_type = "Genotype", return_data = FALSE)
